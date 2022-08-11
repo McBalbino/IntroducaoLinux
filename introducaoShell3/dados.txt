@@ -1,0 +1,4 @@
+primeiro usuario, 1000
+segundo usuario, 2000
+terceiro usuario, 1000
+quarto, 4000
