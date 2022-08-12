@@ -1,1 +1,0 @@
-Filesystem Size Used Avail Use% Mounted on tmpfs 393M 1.2M 392M 1% /run /dev/mapper/ubuntu--vg-lv--2 3.2G 2.2G 805M 74% / tmpfs 2.0G 0 2.0G 0% /dev/shm tmpfs 5.0M 0 5.0M 0% /run/lock /dev/vda2 1.7G 126M 1.5G 8% /boot /dev/mapper/ubuntu--vg-lv--1 2.9G 659M 2.1G 24% /var /dev/mapper/ubuntu--vg-lv--0 2.0G 424K 1.8G 1% /home tmpfs 393M 4.0K 393M 1% /run/user/1000
