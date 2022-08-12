@@ -16,13 +16,11 @@ echo "Versão do kernel: " $(cat /proc/version | awk -F" " '{ print $3 }')
 echo
 echo "Memória total: " $(cat /proc/meminfo | grep MemFree | awk -F" " '{ print $2 $3 }')
 
-echo $(df -h)
-
-diskinfo=$(echo $(df -h) > diskinfo.txt)
 echo "Partições: "
+diskinfo=$(echo $(df -h) > diskinfo.txt)
 while IFS= read -r line
 do
-	echo $line
+	echo -e "$line\n"
 done << $(df -h)
 
 echo "======================================================="
