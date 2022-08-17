@@ -2,9 +2,13 @@
 
 count=10
 
+# if (( $count > 9 ))
 if [ $count -eq 9 ]
 then
-	echo "the condition is true"
+	echo "first condition is true"
+elif (( $count > 9 ))
+then
+	echo "second condition is true"
 else
 	echo "the condition is false"
 fi
