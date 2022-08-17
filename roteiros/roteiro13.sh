@@ -6,14 +6,19 @@ then
 fi
 
 PROCESSO=$1
-STATUS=$(jobs | grep $PROCESSO$ | cut -f3 -d" ")
+TIPO=$2
+START=$($PROCESSO $TIPO)
+STATUS=$(jobs | grep $1$ | cut -f3 -d" ")
+
 
 while [ "$STATUS" != "Done" ]
-if [ "$STATUS" = "Stopped" ]
-then
-	echo "parado" $STATUS
-elif [ "$STATUS" = "Running" ]; then
-	echo "correndo" $STATUS
-else
-	echo "$STATUS"
-fi
+do
+	if [ "$STATUS" = "Stopped" ]
+	then
+		echo "parado" $STATUS
+	elif [ "$STATUS" = "Running" ]; then
+		echo "correndo" $STATUS
+	else
+		echo "$STATUS"
+	fi
+done
